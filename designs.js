@@ -1,9 +1,5 @@
-/*
-    Author: Kevin Omondi Otiato.
-    Date  : 29th June, 2018.
-    Task  : Pixel Art Maker Project.
-*/
-var myColour;       
+
+var clr;       
 var height;
 var  width;          
 
@@ -27,12 +23,12 @@ for(var i=1;i<=h;i++){
 
 // Adds colour to the clicked cell
 $("td").click(function addColour(){
-  myColour=$("#colorPicker").val();
+  clr=$("#colorPicker").val();
   if($(this).attr("style")){
     $(this).removeattr('style');
   }
   else{
-    $(this).attr("style","background-color:"+ myColour);
+    $(this).attr("style","background-color:"+ clr);
   }
  }) 
 }
